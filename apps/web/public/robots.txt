@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aalokbhatta.com/sitemap.xml

@@ -1,0 +1,52 @@
+# Environment files and local credentials
+**/.env*
+!.env.example
+!**/.env.example
+**/.npmrc
+**/.secrets/
+**/secrets/
+**/credentials/
+**/secrets*
+**/credentials*
+**/api-keys*
+**/apikeys*
+**/passwords*
+**/password.*
+*.secret
+*.secrets
+*.credentials
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+
+# Dependencies and generated output
+**/node_modules/
+**/dist/
+**/build/
+**/coverage/
+**/.vite/
+**/.cache/
+**/.turbo/
+.vercel/
+.netlify/
+playwright-report/
+test-results/
+
+# Local uploads and generated user content
+**/uploads/**
+!apps/api/uploads/.gitkeep
+
+# Logs, local databases, and temporary files
+*.log
+*.sqlite
+*.sqlite3
+*.db
+*.tmp
+*.temp
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini

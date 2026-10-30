@@ -1,0 +1,11 @@
+{
+  "framework": "vite",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "apps/web/dist",
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "https://api.aalokbhatta.com/api/:path*" },
+    { "source": "/uploads/:path*", "destination": "https://api.aalokbhatta.com/uploads/:path*" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

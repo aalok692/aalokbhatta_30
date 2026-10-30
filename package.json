@@ -1,0 +1,22 @@
+{
+  "name": "aalokbhatta-personal-site",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/web",
+    "apps/api",
+    "packages/shared"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c blue,green \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "npm run dev --workspace @aalokbhatta/api",
+    "dev:web": "npm run dev --workspace @aalokbhatta/web",
+    "build": "npm run build --workspace @aalokbhatta/web",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "admin:create": "npm run admin:create --workspace @aalokbhatta/api"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
